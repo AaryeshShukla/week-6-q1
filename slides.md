@@ -1,32 +1,39 @@
-<!-- Title slide -->
-# Q4 2025 — Quarterly Earnings Report
-**Acme Bank Ltd.**  
-Presenter: Technical Consulting Team  
+# Quarterly Earnings Report  
+### Technical Consultant Presentation  
+**Email:** 23f2003825@ds.study.iitm.ac.in  
+
 ---
 
-## Highlights
-- Revenue grew **12% YoY**. <!-- fragment -->
-- Net interest margin improved by **0.35%**. <!-- fragment -->
-- Operating costs controlled at **-3% QoQ**. <!-- fragment -->
+## Key Highlights (Markdown Slide)
+
+- Revenue growth of **12% YoY** <!-- .fragment -->
+- Net profit increased by **8%** <!-- .fragment -->
+- Operating margin improved by **2.1%** <!-- .fragment -->
+- Customer acquisition up **15%** <!-- .fragment -->
 
 Note:
-Speaker: Start with a 30 second summary. Emphasize YoY revenue growth and NIM improvement.
+- These are preliminary numbers for Q4.
+- Emphasize YoY consistency and stability.
 
 ---
 
-## Financial Formula (math)
-We forecast net income with:
-$$ \text{Net Income} = (\text{Net Interest Income} + \text{Other Income}) - \text{Expenses} - \text{Provisions} $$
+## Financial Formula (Math)
+
+The Net Interest Margin is:
+
+$$
+NIM = \frac{Interest\ Income - Interest\ Expense}{Average\ Earning\ Assets}
+$$
 
 Note:
-Explain that provisions are conservative and include stress scenarios.
+- Highlight how NIM improved due to reduced borrowing costs.
 
 ---
 
-## Example: Simple P&L snippet (code)
-```sql
--- SQL sample to compute net interest income (example)
-SELECT
-  SUM(interest_received) - SUM(interest_paid) AS net_interest_income
-FROM loan_interest
-WHERE period >= '2025-10-01' AND period <= '2025-12-31';
+## Code Sample (Syntax Highlighting)
+
+```python
+def calculate_growth(prev, current):
+    return ((current - prev) / prev) * 100
+
+print("Revenue Growth:", calculate_growth(120, 135), "%")
