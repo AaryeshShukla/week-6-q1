@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Q{Quarter} Earnings — RevealJS</title>
+
+  <!-- Reveal core CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4/dist/theme/black.css" id="theme">
+
+  <!-- Highlight.js for code syntax highlighting -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11/styles/default.min.css">
+
+  <!-- KaTeX (optional) for math rendering if you prefer KaTeX -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+
+  <style>
+    /* small footer */
+    .footer-email { position: absolute; bottom: 14px; right: 18px; font-size: 0.9rem; opacity: 0.9; }
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <!-- You can either write slides inline or load from a markdown file.
+           Below we load a markdown file (slides.md) so we can edit slides using Markdown. -->
+      <section data-markdown="slides.md" data-separator="^\n---\n" data-separator-vertical="^\n--\n" data-separator-notes="^Note:" data-charset="utf-8"></section>
+    </div>
+  </div>
+
+  <div class="footer-email">Contact: 23f2003825@ds.study.iitm.ac.in</div>
+
+  <!-- Reveal and plugins -->
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4/dist/reveal.js"></script>
+
+  <!-- Plugins -->
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4/plugin/markdown/markdown.esm.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4/plugin/highlight/highlight.esm.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4/plugin/notes/notes.esm.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4/plugin/math/math.esm.js"></script>
+
+  <!-- MathJax (used by Reveal's math plugin) -->
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  <script>
+    // Initialize Reveal
+    Reveal.initialize({
+      hash: true,
+      center: true,
+      plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.MathJax ],
+      math: {
+        mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'
+      },
+      // highlight.js configuration (default)
+      highlight: {
+        // optionally configure if needed
+      }
+    });
+
+    // Optional: re-render math when slides load (sometimes helpful)
+    Reveal.on( 'slidechanged', function() {
+      if (window.MathJax) { window.MathJax.typesetPromise?.(); }
+    });
+  </script>
+</body>
+</html>
