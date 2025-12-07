@@ -10,25 +10,20 @@
 
   <!-- Code highlight theme -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.0.4/plugin/highlight/monokai.css">
-
-  <style>
-    body { margin: 0; }
-  </style>
 </head>
 
 <body>
 
 <div class="reveal">
   <div class="slides">
-    <!-- Load Markdown slides -->
+    <!-- Markdown slides -->
     <section data-markdown="slides.md"
              data-separator="---"
-             data-separator-vertical="--"
              data-separator-notes="Note:"></section>
   </div>
 </div>
 
-<!-- Reveal.js Core -->
+<!-- Core -->
 <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.0.4/dist/reveal.js"></script>
 
 <!-- Plugins -->
@@ -41,7 +36,7 @@
 Reveal.initialize({
   hash: true,
   slideNumber: true,
-  plugins: [ RevealMarkdown, RevealHighlight, RevealMath.KaTeX, RevealNotes ],
+  plugins: [RevealMarkdown, RevealHighlight, RevealMath.KaTeX, RevealNotes],
 });
 </script>
 
