@@ -6,9 +6,9 @@
 
 ## Key Highlights
 
-- Revenue growth of **12% YoY** <!-- .element: class="fragment" -->
-- Net profit increased by **8%** <!-- .element: class="fragment" -->
-- Operating margin improved by **2.1%** <!-- .element: class="fragment" -->
+<p class="fragment">Revenue growth of <b>12% YoY</b></p>
+<p class="fragment">Net profit increased by <b>8%</b></p>
+<p class="fragment">Operating margin improved by <b>2.1%</b></p>
 
 Note:
 These are highlights for Q4.
