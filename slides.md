@@ -4,16 +4,14 @@
 
 ---
 
-## Key Highlights (Markdown Slide)
+## Key Highlights
 
 - Revenue growth of **12% YoY** <!-- .fragment -->
 - Net profit increased by **8%** <!-- .fragment -->
 - Operating margin improved by **2.1%** <!-- .fragment -->
-- Customer acquisition up **15%** <!-- .fragment -->
 
 Note:
-- These are preliminary numbers for Q4.
-- Emphasize YoY consistency and stability.
+These are highlights for Q4.
 
 ---
 
@@ -26,14 +24,14 @@ NIM = \frac{Interest\ Income - Interest\ Expense}{Average\ Earning\ Assets}
 $$
 
 Note:
-- Highlight how NIM improved due to reduced borrowing costs.
+Explain calculation impact.
 
 ---
 
-## Code Sample (Syntax Highlighting)
+## Example Code
 
 ```python
 def calculate_growth(prev, current):
     return ((current - prev) / prev) * 100
 
-print("Revenue Growth:", calculate_growth(120, 135), "%")
+print("Growth:", calculate_growth(120, 135))
